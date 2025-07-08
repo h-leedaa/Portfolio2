@@ -1,0 +1,47 @@
+/* use for  dak which design that used and take it  to reuse  */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "outfit",sans-serif;
+    
+}
+:root{
+    --main-color--900:#742753;
+    --main-color--800:#8a2a62;
+    --main-color--700:#a72f76;
+    --main-color--600:#c24091;
+    --main-color--500:#d55fae;
+     --main-color--400:#e284c5;
+    --main-color--300:#eeb3dd;
+    --main-color--200:#f5d6ed;
+    --main-color--100:#f9eaf6;
+    /* The most od usingg with letter or bg or anything else */
+}
+/* text color */
+.text-color-900{color: var(--main-color--900);}
+.text-color-800{color: var(--main-color--800);}
+.text-color-700{color: var(--main-color--700);}
+.text-color-600{color: var(--main-color--600);}
+.text-color-500{color: var(--main-color--500);}
+.text-color-400{ color: var(--main-color--400);}
+.text-color-300{color: var(--main-color--300);}
+.text-color-200{ color: var(--main-color--200);}
+.text-color-100{color: var(--main-color--100);}
+
+/* bg-color */
+.bg-color-900{   background-color:var(--main-color--900);}
+.bg-color-800{   background-color:var(--main-color--800);}
+.bg-color-700{   background-color:var(--main-color--700);}
+.bg-color-600{   background-color:var(--main-color--600);}
+.bg-color-500{   background-color:var(--main-color--500);}
+.bg-color-400{   background-color:var(--main-color--400);}
+.bg-color-300{   background-color:var(--main-color--300);}
+.bg-color-200{   background-color:var(--main-color--200);}
+.bg-color-100{   background-color:var(--main-color--100);}
+

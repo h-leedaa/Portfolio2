@@ -1,0 +1,111 @@
+/*  opacity : bat tae run REAG TAE can CLICK
+    important use4 oy something der
+    clamp:
+    screen ipad kit jea vw not px */
+
+/*  start from Screen Mobile */
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 1px 10px rgb(86, 78, 78);
+    transition: 0.3s ease-in-out;
+    z-index: 9999;
+
+}
+header > nav{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+
+}
+header > nav > .logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: grey;
+}
+header > nav > .logo> img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* border button: p'tat kroum  */
+header > nav > button{
+    font-size: 35px;
+    border: none;
+    background-color: transparent;
+}
+header > nav > .menu{
+    width: 100%;
+    position: absolute;
+    background-color:var(--main-color--800);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    top: 80px;
+    pointer-events: none;
+    padding: 10px 0;
+}
+header > nav > .menu > li{
+    padding: 10px;
+    text-align: center;
+   
+}
+header > nav > .menu  > li> a{
+    margin:10px ;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.active{
+   opacity: 1 !important;
+   pointer-events: auto !important;
+}
+/* 19-jun-25 */
+.unactive{
+    display: none !important;
+}
+header > nav > .menu-flex{
+    display: flex;
+    list-style: none;
+    display: none;
+
+}
+header > nav > .menu-flex > li{
+    color: var(--main-color--500);
+    font-size: clamp(0px,3vw,20px);
+    cursor: pointer;
+}
+/* Start from screen Tablet and Ipad */
+@media(min-width:768px){
+    header > nav{
+        width: 80%;
+    }
+    header > nav > button{
+        display: none;
+    }
+    header > nav > .menu-flex{
+        display: flex;
+    }
+    header > nav > .menu-flex > li > a{
+        padding: 10px;
+        text-decoration: none;
+    }
+
+}
+/* Start from Screen Laptop */
+@media(min-width:1280px){
+    header > nav {
+        width: 75%;
+    }
+    header > nav > .menu-flex > li{
+        padding: 0 20px;
+    }
+}
