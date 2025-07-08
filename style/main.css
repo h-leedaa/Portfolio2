@@ -379,7 +379,6 @@ main > .blog > .row >  .card > .ct-service > .body > p{
     main > .blog > .row > .card{
         width: 0;
         height: auto;
-        background-color: aqua;
       }
 }
 /* Start from Screen Laptop */
